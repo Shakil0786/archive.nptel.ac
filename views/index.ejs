@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//style/style.css">
+</head>
+
+<body>
+    <div>
+        <a id="course-certificate" href="/nptel/view">Course
+                Certificate</a>
+    </div>
+
+    <script>
+        document.getElementById('course-certificate').onclick = function(event) {
+            event.preventDefault(); // Prevent the default anchor behavior
+
+            // Open the PDF in a new tab
+            window.open('/NPTEL24MG96S551800167895446070.pdf', '_blank');
+
+            // Trigger the download
+            const link = document.createElement('a');
+            link.href = '/NPTEL24MG96S551800167895446070.pdf';
+            link.download = 'NPTEL24MG96S551800167895446070.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</body>
+
+</html>

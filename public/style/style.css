@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,300;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(232, 237, 241);
+  font: 100;
+  text-align: center;
+  /* Center text within body */
+}
+
+div {
+  background-color: #3070bf;
+  /* Set background color to blue */
+  border-radius: 10px;
+  /* Set border radius */
+  padding: 10px 35px;
+  /* Add some padding for better appearance */
+  color: white;
+  /* Change text color to white for contrast */
+  margin: 0 auto;
+  /* Remove default margin and center horizontally */
+  position: relative;
+  /* Add relative positioning to maintain original position */
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+/* Media Queries */
+
+/* Mobile devices (up to 600px) */
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    /* Stack elements vertically */
+    height: auto;
+    margin-top: 280px;
+    /* Allow height to adjust to content */
+    /* Add some padding */
+  }
+  div {
+    padding: 10px 35px;
+    /* Reduce padding */
+    font-size: 16px;
+    /* Adjust font size */
+  }
+  a {
+    font-size: 18px;
+    /* Adjust font size for links */
+  }
+}
+
+/* Tablet devices (601px to 900px) */
+
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    flex-direction: column;
+    /* Stack elements vertically */
+    /* Allow height to adjust to content */
+    height: auto;
+    margin-top: 280px;
+    /* Add some padding */
+  }
+  div {
+    padding: 10px 35px;
+    /* Adjust padding */
+    font-size: 18px;
+    /* Adjust font size */
+  }
+  a {
+    font-size: 16px;
+    /* Adjust font size for links */
+  }
+}
+
+/* Desktop devices (901px and above) */
+
+@media (min-width: 901px) {
+  body {
+    flex-direction: row;
+    /* Align elements horizontally */
+    height: 90vh;
+    /* Keep full height */
+    /* No padding */
+  }
+  div {
+    padding: 12px 35px;
+    /* Default padding */
+    font-size: 20px;
+    /* Default font size */
+  }
+  a {
+    font-size: 18px;
+    /* Default font size for links */
+  }
+}
